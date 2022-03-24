@@ -1,73 +1,51 @@
-<p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo_text.svg" width="320" alt="Nest Logo" /></a>
-</p>
+![enter image description here](https://scontent.fplu8-1.fna.fbcdn.net/v/t1.18169-9/10306232_578591528948553_5843355773361946303_n.png?_nc_cat=109&ccb=1-5&_nc_sid=09cbfe&_nc_eui2=AeEock17EPNgwzy-EKbWShuLFqDCxxlaPxcWoMLHGVo_F-4Z4gvl0IH19Psga-keg9NpShF6Orn_OHg5_eRPc5jI&_nc_ohc=1945BCRc8V0AX9G9q9D&_nc_ht=scontent.fplu8-1.fna&oh=00_AT9I730XfkHfBDKywcESjX8RCvwCIfuWTcMIij4GFTRNfg&oe=62602755)
 
-[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
-[circleci-url]: https://circleci.com/gh/nestjs/nest
+# Befective Contacts Api!
 
-  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
-    <p align="center">
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
-<a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
-<a href="https://coveralls.io/github/nestjs/nest?branch=master" target="_blank"><img src="https://coveralls.io/repos/github/nestjs/nest/badge.svg?branch=master#9" alt="Coverage" /></a>
-<a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
-<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
-<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
-  <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg"/></a>
-    <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
-  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow"></a>
-</p>
-  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
-  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
+Api de contatos da befective .
 
-## Description
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+# Requerimentos
 
-## Installation
+Antes de executar a aplicacao e necessario que voce tenha o docker instalado
+em sua maquina, pois utilizamos o mesmo para prover o banco de dos (MYSQL)
+[Pagina de download do docker.](https://docs.docker.com/desktop/)
 
-```bash
-$ npm install
-```
+# Primeiros passos
 
-## Running the app
+Apos instalar o docker e necessario iniciar o container voce pode fazer isso executando o comando:
 
-```bash
-# development
-$ npm run start
+    docker compose up 
+Adicione o parametro -d caso queira que o processo rode em background
 
-# watch mode
-$ npm run start:dev
+    docker compose up -d
 
-# production mode
-$ npm run start:prod
-```
+## Docker Env
+Apos subir o container no docker sera provido um servidor mysql nessas configuracoes padroes 
 
-## Test
+    Hostname : localhost
+    Port: 3306
+    Database: befective
+    Username: befective
+    Password : befective
 
-```bash
-# unit tests
-$ npm run test
 
-# e2e tests
-$ npm run test:e2e
 
-# test coverage
-$ npm run test:cov
-```
+# Instalando Dependencias da aplicacao
 
-## Support
+Para instalar as dependencias rode o comando
 
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
+    yarn install ( recomendado ) ou npm install
 
-## Stay in touch
+## Iniciando a aplicacao 
 
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
+Para iniciar a aplicacao rode o comando
 
-## License
+    yarn start:dev
 
-Nest is [MIT licensed](LICENSE).
+
+
+# Documentacao da api
+Pode ser acessada atraves da seguinte da url a 
+
+> http://127.0.0.1:3000
