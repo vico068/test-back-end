@@ -16,7 +16,7 @@ export class Contact {
   full_name: string;
 
   @Column()
-  phone?: string;
+  phone: string;
 
   @CreateDateColumn()
   createdAt?: Date;
