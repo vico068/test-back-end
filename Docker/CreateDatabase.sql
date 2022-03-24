@@ -1,0 +1,2 @@
+CREATE DATABASE IF NOT EXISTS `befective`;
+GRANT ALL PRIVILEGES ON DATABASE `befective` TO befective;

@@ -1,0 +1,28 @@
+version: '3'
+
+services:
+  db:
+    image: mysql:5.7
+    build:
+      context: ./Docker
+      dockerfile: mysql.Dockerfile
+    restart: always
+    environment:
+      MYSQL_DATABASE: 'befective'
+      MYSQL_USER: 'befective'
+      MYSQL_PASSWORD: 'befective'
+      MYSQL_ROOT_PASSWORD: 'root'
+    ports:
+      - '3306:3306'
+    expose:
+      - '3306'
+    volumes:
+      - my-db:/var/lib/mysql
+    networks:
+      - nesjs-network
+
+volumes:
+  my-db:
+
+networks:
+  nesjs-network:
