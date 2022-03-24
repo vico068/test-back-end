@@ -46,6 +46,6 @@ Para iniciar a aplicacao rode o comando
 
 
 # Documentacao da api
-Pode ser acessada atraves da seguinte da url a 
+Pode ser acessada atraves da seguinte  url 
 
 > http://127.0.0.1:3000

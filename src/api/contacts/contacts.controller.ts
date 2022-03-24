@@ -38,6 +38,11 @@ export class ContactsController {
     return this.contactsService.findAll();
   }
 
+  @Get(':id')
+  findOne(@Param('id') id: string) {
+    return this.contactsService.findOne(id);
+  }
+
   @Post()
   async create(
     @Body(ValidationPipe) createContactDto: CreateContactDto,
