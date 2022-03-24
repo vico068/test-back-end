@@ -22,8 +22,8 @@ export class ContactsController {
   constructor(private readonly contactsService: ContactsService) {}
   @Get('paginate')
   async index(
-    @Query('page', new DefaultValuePipe(1), ParseIntPipe) page: number = 1,
-    @Query('limit', new DefaultValuePipe(10), ParseIntPipe) limit: number = 10,
+    @Query('page', new DefaultValuePipe(1), ParseIntPipe) page = 1,
+    @Query('limit', new DefaultValuePipe(10), ParseIntPipe) limit = 10,
   ): Promise<Pagination<Contact>> {
     limit = limit > 100 ? 100 : limit;
     return this.contactsService.paginate({
